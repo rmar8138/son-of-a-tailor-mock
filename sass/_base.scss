@@ -1,0 +1,52 @@
+// COLORS
+
+$color-white: rgb(245, 244, 244);
+$color-black: #4c4c4c;
+$color-light-grey: #a7b5be;
+$color-grey: #4f6473;
+$color-dark-grey: #4b5961;
+
+$color-light-blue: #337ab7;
+$color-blue: #2e6da4;
+$color-dark-blue: #092f64;
+
+
+// FONTS
+
+$font-stack: 'Roboto', 'Helvetica', sans-serif;
+$font-quote: 'Georgia';
+
+$font-sm: 1.2vw;
+
+// SIZES 
+
+$size-xs: 1.2rem;
+$size-sm: 1.8rem;
+$size-md: 3.6rem;
+$size-lg: 7rem;
+
+// RESET
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    // border: 0.5px solid orangered; 
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-stack;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    color: $color-black;
+    background-color: $color-white;
+}

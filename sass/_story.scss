@@ -1,0 +1,61 @@
+.story {
+    padding: $size-md;
+    text-align: center;
+
+    &__text {
+        display: inline-block;
+        color: $color-grey;
+        font-size: 2.2vw;
+        padding: $size-lg;
+        margin-top: -$size-md;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: $size-sm;
+
+        &__card {
+            position: relative;
+            overflow: hidden;
+
+            &:hover &__info {
+                transform: translateY(-12rem);
+            }
+
+            &:hover &__info > *:not(:first-child) {
+                opacity: 1
+            }
+
+            &__img {
+                width: 100%;
+            }
+
+            &__info {
+                position: absolute;
+                bottom: -8rem;
+                width: 100%;
+                transition: all 0.4s;
+
+                & > *:not(:last-child) {
+                    padding-bottom: $size-sm;
+                }
+
+                &__text {
+                    color: $color-white;
+                    font-size: $font-sm;
+                    letter-spacing: 0.4px;
+                    opacity: 0;
+                    transition: all 0.4s ease-out 0.1s;
+                }
+
+                &__buttons {
+                    display: flex;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: all 0.4s ease-out 0.1s;
+                }
+            }
+        }
+    }
+}
