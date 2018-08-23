@@ -68,7 +68,7 @@
         font-size: $font-sm;
         color: $color-white;
         margin: $size-sm 0;
-        z-index: 2;
+        z-index: 1;
 
         &::before,
         &::after {
@@ -79,19 +79,19 @@
             line-height: 0;
             color: $color-light-grey;
             position: absolute;
-            z-index: 1;
+            z-index: -1;
         }
 
         &::before {
             content: "\201C";
-            top: 3rem;
-            left: -3rem;
+            top: 35%;
+            left: -10%;
         }
 
         &::after {
             content: "\201D";
-            bottom: -3rem;
-            right: -3rem;
+            bottom: -20%;
+            right: -10%;
         }
     }
 

@@ -2,8 +2,8 @@
 
 .heading-primary {
     color: $color-white;
-    font-size: 4vw;
-    font-weight: 300;
+    font-size: 4.6vw;
+    font-weight: 400;
     letter-spacing: 1.4px;
 }
 
@@ -25,6 +25,15 @@
     font-weight: 300;
     letter-spacing: 1.2px;
     line-height: 1;
+
+    &--underline {
+       font-size: 2.6rem;
+       display: inline-block;
+       width: 30rem;
+       border-bottom: 1px solid $color-white;
+       padding-bottom: $size-sm;
+       margin-bottom: $size-sm;
+    }
 }
 
 .heading-quad {
