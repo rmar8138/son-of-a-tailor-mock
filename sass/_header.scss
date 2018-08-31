@@ -5,6 +5,13 @@
     background-repeat: no-repeat;
     margin-top: 5rem;
 
+    @media only screen and (max-width: 50em) {
+        background-image: url(../img/hero-1-mobile.jpg);
+        height: 90vw;
+        background-size: cover;
+        background-position: center;
+    }
+
     &__hero-1 {
         height: 100%;
         display: flex;
@@ -13,11 +20,8 @@
         justify-content: center;
 
         &__text {
-            width: 50%;
+            width: 55%;
             text-align: center;
-        }
-
-        &__buttons {
         }
     }
 }

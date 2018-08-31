@@ -17,6 +17,8 @@ $font-stack: 'Lato', 'Helvetica', sans-serif;
 $font-quote: 'Georgia';
 
 $font-sm: 1.2vw;
+$font-lg: 3vw;
+$font-xl: 4.2vw;
 
 // SIZES 
 
@@ -33,7 +35,7 @@ $size-lg: 7rem;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    // border: 0.5px solid orangered; 
+    // border: 0.5px solid orangered;
 }
 
 html {

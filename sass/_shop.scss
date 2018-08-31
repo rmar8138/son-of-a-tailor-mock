@@ -25,6 +25,25 @@
     &__img {
         width: 100%;
     }
+
+    @media only screen and (max-width: 50em) {
+        display: flex;
+        flex-direction: column;
+
+        &__info {
+            padding: 12vw;
+            position: relative;
+            top: unset;
+            left: unset;
+            transform: translate(0);
+            order: 1;
+        }
+
+        &__text {
+            color: $color-black;
+            font-size: $font-lg;
+        }
+    }
 }
 
 .shop-2 {
@@ -33,5 +52,10 @@
         left: unset;
         right: 25%;
         transform: translate(50%, -50%);
+
+        @media only screen and (max-width: 50em) {
+            right: unset;
+            transform: translate(0);
+        }
     }
 }

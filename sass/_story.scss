@@ -8,12 +8,25 @@
         font-size: 2.2vw;
         padding: $size-lg;
         margin-top: -$size-md;
+        width: 70%;
+
+        @media only screen and (max-width: 50em) {
+            font-size: $font-xl;
+            width: 100%;
+        }
     }
 
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: $size-sm;
+
+        @media only screen and (max-width: 50em) {
+            grid-template-columns: 100%;
+            grid-auto-rows: 80vw;
+            grid-row-gap: $size-sm;
+        }
+        
 
         &__card {
             position: relative;
@@ -36,6 +49,11 @@
                 bottom: -8rem;
                 width: 100%;
                 transition: all 0.4s;
+                font-size: $font-sm;
+
+                @media only screen and (max-width: 50em) {
+                    font-size: $font-lg;
+                }
 
                 & > *:not(:last-child) {
                     padding-bottom: $size-sm;
@@ -43,7 +61,6 @@
 
                 &__text {
                     color: $color-white;
-                    font-size: $font-sm;
                     letter-spacing: 0.4px;
                     opacity: 0;
                     transition: all 0.4s ease-out 0.1s;

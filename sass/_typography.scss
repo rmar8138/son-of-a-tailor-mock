@@ -2,8 +2,8 @@
 
 .heading-primary {
     color: $color-white;
-    font-size: 4.6vw;
-    font-weight: 400;
+    font-size: 4.8vw;
+    font-weight: 300;
     letter-spacing: 1.4px;
 }
 
@@ -26,6 +26,10 @@
     letter-spacing: 1.2px;
     line-height: 1;
 
+    @media only screen and (max-width: 50em) {
+        font-size: 4vw;
+    }
+
     &--underline {
        font-size: 2.6rem;
        display: inline-block;
@@ -42,4 +46,28 @@
     font-weight: 100;
     letter-spacing: 1.2px;
     line-height: 1;
+
+    @media only screen and (max-width: 50em) {
+        font-size: $font-xl;
+    }
+}
+
+.shop__heading {
+    @media only screen and (max-width: 50em) {
+        color: $color-black;
+        font-size: 6vw;
+    }
+}
+
+.box__heading {
+    @media only screen and (max-width: 50em) {
+        font-size: 6vw;
+    }
+}
+
+.blog__heading {
+    @media only screen and (max-width: 50em) {
+        font-size: $font-xl;
+        text-align: center;
+    }
 }
